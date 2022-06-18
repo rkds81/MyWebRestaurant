@@ -1,0 +1,242 @@
+html {
+    font-family: roboto;
+    background-image: url("jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+main,
+.header {
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #0065FC;
+}
+
+
+/*------------search button*------*/
+
+.main_dish,
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Desserts,
+.Menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.Order_button {
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #9356DC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/***********Filter button**********/
+
+.filter-button {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.mychoice {
+    border-radius: 50px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    padding: 20px 10px 0px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: flex;
+    justify-content: left;
+}
+
+
+/* Darker background on mouse-over */
+
+.myicon:hover {
+    background-color: #DEEBFF;
+}
+
+
+/* First Section properties*/
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background: #F2F2F2;
+}
+
+.container>* {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-top-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-style: none;
+}
+
+.card-descr {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-color: white;
+}
+
+.card:hover {
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.like:hover {
+    transition: #9356DC;
+    fill: #9356DC;
+    color: #9356DC;
+    cursor: pointer;
+}
+
+.Order_button {
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #9356DC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*footer properties*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: black;
+    margin-left: 20px;
+}
+
+.footer_logo {
+    padding-left: 10px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.footer-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+@media all and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .row,
+    .Menu,
+    .main_dish,
+    .Desserts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .header {
+        display: block;
+        align-items: center;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .footer-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer_logo {
+        padding-left: 0;
+    }
+}
