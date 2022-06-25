@@ -1,4 +1,4 @@
-        html {
+    html {
         font-family: roboto;
     }
     
@@ -64,6 +64,11 @@
         border-radius: 50px;
         background-color: #9356DC;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .Explore_button:hover {
+        background-color: purple;
+        cursor: pointer;
     }
     /***********Filter button**********/
     
@@ -184,6 +189,15 @@
     }
     /*footer properties*/
     
+    .footer-icon {
+        display: flex;
+        gap: 5px;
+    }
+    
+    .w3-text-white {
+        color: white;
+    }
+    
     .footer {
         display: flex;
         flex-direction: column;
@@ -203,6 +217,7 @@
         justify-content: space-between;
         font-weight: bolder;
         font-size: 14px;
+        padding-left: 10px;
     }
     
     @media all and (max-width:768px) {
@@ -258,4 +273,4 @@
         .footer_logo {
             padding-left: 0;
         }
-        @media all and (min-width: 768px) and (max-width: 992px)
+    }
