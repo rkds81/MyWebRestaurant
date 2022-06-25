@@ -1,0 +1,267 @@
+main,
+.header {
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-img {
+    height: 50%;
+    object-fit: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.home {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0065FC;
+}
+
+
+/*------------search button*------*/
+
+.main_dish,
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Desserts,
+.Menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    font-family: roboto;
+}
+
+.Food-name {
+    display: flex;
+    width: 300px;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: white;
+}
+
+.food-list {
+    padding-left: 10px;
+    width: 80%;
+    font-size: 17px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.select {
+    width: 20%;
+    float: right;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.select:hover {
+    background: turquoise;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shrikhand', cursive;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.mychoice {
+    border-radius: 50px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    padding: 20px 10px 0px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background: #F2F2F2;
+}
+
+.container>* {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title-name {
+    font-style: Shrikhand;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.card-descr {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-color: white;
+}
+
+.card:hover {
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.like:hover {
+    transition: purple;
+    fill: purple;
+    color: purple;
+    cursor: pointer;
+}
+
+.Order_button {
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #9356DC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Order_button:hover {
+    background-color: purple;
+    cursor: pointer;
+}
+
+
+/*footer properties*/
+
+.footer-icon {
+    display: flex;
+    gap: 5px;
+}
+
+.w3-text-white {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: black;
+    margin-left: 20px;
+    font-family: roboto;
+}
+
+.footer_logo {
+    padding-left: 10px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.footer-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+@media all and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .row,
+    .Menu,
+    .main_dish,
+    .Desserts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .header {
+        display: flex;
+        jutify-content: space-around;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .footer-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer_logo {
+        padding-left: 0;
+    }
+}
