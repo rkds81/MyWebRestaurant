@@ -9,8 +9,9 @@ main {
 }
 
 .menu-img {
-    height: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
 .header {
@@ -231,6 +232,11 @@ a:hover {
         flex-direction: column;
         justify-content: space-around;
     }
+    .menu-img {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
     .row,
     .Menu,
     .main_dish,
@@ -242,7 +248,7 @@ a:hover {
     }
     .header {
         display: flex;
-        jutify-content: space-around;
+        justify-content: space-around;
     }
     .filter {
         display: flex;
