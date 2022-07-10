@@ -126,6 +126,20 @@
     .myicon:hover {
         background-color: #DEEBFF;
     }
+    
+    .fa-solid {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    .fa-solid:hover {
+        -webkit-text-fill-color: #9356DC;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #9356DC;
+        transform: rotateY(360deg);
+        cursor: pointer;
+    }
     /* First Section properties*/
     
     .container {
